@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡MI AMOR BONITO!</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>¡Feliz Mes, Mi Amor!</h1>
+        <p class="message">Un mes lleno de risas, amor y momentos inolvidables. Gracias por cada instante. Te Quiero mi Amor Bonito.</p>
+    </div>
+    <button id="playMusicBtn" class="music-btn">Reproducir...</button>
+
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="./images/w1.png" alt="Foto 1 del carrusel">
+        </div>
+        <div class="carousel-slide">
+            <img src="./images/w2.jpeg" alt="Foto 2 del carrusel">
+        </div>
+        <div class="carousel-slide">
+            <img src="./images/w3.jpeg" alt="Foto 3 del carrusel">
+        </div>
+    </div>
+
+
+    <div class="button-container">
+        <button id="openModalBtn">Ver más fotos</button>
+        <button id="openSurpriseModalBtn">Más sorpresas</button>
+    </div>
+
+    <audio id="background-music" src="./images/Amar-amando.mp3" loop></audio>
+
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-gallery">
+                <img src="./images/foto1.jpeg" alt="Otra foto de nosotros">
+                <img src="./images/foto2.jpeg" alt="Un momento feliz">
+                <img src="./images/foto3.jpeg" alt="Nuestra última foto">
+            </div>
+        </div>
+    </div>
+
+    <div id="surpriseModal" class="modal">
+    <div class="modal-content">
+        <span class="close-surprise-btn">&times;</span>
+        <div class="surprise-gallery-wrapper">
+            <div class="surprise-gallery">
+                <div class="surprise-item">
+                    <img src="./images/img2.jpeg" alt="Foto con enunciado">
+                    <p class="caption">"cada momento a tu lado..."</p>
+                </div>
+                <div class="surprise-item">
+                    <img src="./images/img1.jpeg" alt="Foto con enunciado">
+                    <p class="caption">"siento como si ya habíamos"</p>
+                </div>
+                <div class="surprise-item">
+                    <img src="./images/img3.jpeg" alt="Foto con enunciado">
+                    <p class="caption">"vivido una vida antes..."</p>
+                </div>
+                <div class="surprise-item">
+                    <img src="./images/imagen1.jpg" alt="Foto con enunciado">
+                    <p class="caption">"no sé si sera nuestra conexión,"</p>
+                </div>
+                <div class="surprise-item">
+                    <img src="./images/imagen3.jpg" alt="Foto con enunciado">
+                    <p class="caption">"lo único que sé, es que me haces felíz y espero que tu tambien lo seas ."</p>
+                </div>
+                
+                <div class="surprise-item video-item">
+                    <video width="600" controls loop>
+                        <source src="./images/video.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+                    <p class="caption">"QUE DIOS NOS BENDIGA...Un pequeño video de nuestros momentos."</p>
+                </div>
+            </div>
+            <button class="prev-btn">&lt; </button>
+            <button class="next-btn"> &gt;</button>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
