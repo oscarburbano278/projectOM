@@ -1,6 +1,8 @@
-body {
-    display: none;
-    /* ... el resto de tus estilos ... */
+.visit-counter {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1000;
 }
 
 body {
@@ -14,6 +16,8 @@ body {
     text-align: center;
     padding: 20px;
     margin: 0;
+    position: relative;
+    display: none;
 }
 
 .container {
